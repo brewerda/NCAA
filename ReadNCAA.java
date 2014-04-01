@@ -27,27 +27,28 @@ public class ReadNCAA {
 					String name = values[i];
 					System.out.println(name + " ");
 					names.add(name);
-					
 				} else if(j==1) {
 					int seed = Integer.parseInt(values[i]);
 					System.out.println(seed);
-					seeds.add(seed);
-					
+					seeds.add(seed);	
 				} else if(j==2) {
 					double wp = Double.parseDouble(values[i]);
 					System.out.println(wp);
 					winp.add(wp);
 				}
-				
 				j=1;
-				
-				
 			}
-			//System.out.print(names);
-			//System.out.print(seeds);
-			//System.out.print(winp);
+			for (int i=0,j=0; i<values.length; i++,j++ ) {
+				ArrayList<Team> teams = new ArrayList<Team>();
+
+				Team team = new Team(values[i], Integer.parseInt(values[i+1]), Double.parseDouble(values[i+2]));
+
+				teams.add(team);
+
+			}
 			System.out.println();
 		}
+		
 	}
 
 }

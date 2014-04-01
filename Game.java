@@ -5,7 +5,7 @@ public class Game {
 		//win(team1,team2,wp1,wp2);
 		
 	
-}
+	}
 	public Game(String[] values) {
 		for (int i=0;i<values.length;i++) {
 			 String team1 = values[i];
@@ -14,7 +14,7 @@ public class Game {
 			 double wp2 = Double.parseDouble(values[i+5]);
 
 			//System.out.println(win(team1,team2,wp1,wp2));
-			 System.out.println(team1);
+
 
 			 win(team1,team2,wp1,wp2);
 		}
